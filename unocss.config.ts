@@ -1,10 +1,18 @@
+/*
+ * @Author: cest
+ * @Date: 2022-08-18 13:57:11
+ * @LastEditTime: 2022-08-18 15:09:16
+ * @LastEditors: cest
+ * @FilePath: /color-ui-next/unocss.config.ts
+ * @Description: 编辑描述内容
+ */
 import {
   defineConfig,
   presetAttributify,
   presetIcons,
   presetTypography,
   presetUno,
-  presetWebFonts,
+  // presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -22,13 +30,13 @@ export default defineConfig({
       warn: true,
     }),
     presetTypography(),
-    presetWebFonts({
-      fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
-      },
-    }),
+    // presetWebFonts({
+    //   fonts: {
+    //     sans: 'DM Sans',
+    //     serif: 'DM Serif Display',
+    //     mono: 'DM Mono',
+    //   },
+    // }),
   ],
   transformers: [
     transformerDirectives(),
