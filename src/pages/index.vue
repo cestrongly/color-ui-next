@@ -1,11 +1,18 @@
+<!--
+ * @Author: cest
+ * @Date: 2022-08-18 13:57:11
+ * @LastEditTime: 2022-08-18 15:33:47
+ * @LastEditors: cest
+ * @FilePath: /color-ui-next/src/pages/index.vue
+ * @Description: 编辑描述内容
+-->
 <script setup lang="ts">
 const user = useUserStore()
 const name = $ref(user.savedName)
 
 const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
+const go = (url: string) => {
+  router.push(url)
 }
 
 const { t } = useI18n()
@@ -40,7 +47,7 @@ const { t } = useI18n()
       bg="transparent"
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
-      @keydown.enter="go"
+      @keydown.enter="go(`/hi/${encodeURIComponent(name)}`)"
     >
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
 
@@ -48,9 +55,17 @@ const { t } = useI18n()
       <button
         btn m-3 text-sm
         :disabled="!name"
-        @click="go"
+        @click="go(`/hi/${encodeURIComponent(name)}`)"
       >
         {{ t('button.go') }}
+      </button>
+    </div>
+    <div>
+      <button
+        btn m-3 text-sm
+        @click="go('/color-ui')"
+      >
+        {{ t('button.color_ui_index') }}
       </button>
     </div>
   </div>
