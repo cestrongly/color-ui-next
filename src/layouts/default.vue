@@ -1,12 +1,13 @@
 <!--
  * @Author: cest
  * @Date: 2022-08-20 19:22:16
- * @LastEditTime: 2022-08-21 01:06:49
+ * @LastEditTime: 2022-08-21 02:28:47
  * @LastEditors: cest
  * @FilePath: /color-ui-next/src/layouts/default.vue
  * @Description: 默认布局系统
 -->
 <script lang="ts" setup>
+import '~/assets/color-ui/stylus/index.styl'
 import '~/pages/color-ui/assets/stylus/index.styl'
 </script>
 

@@ -1,7 +1,7 @@
 <!--
  * @Author: cest
  * @Date: 2022-08-18 13:57:11
- * @LastEditTime: 2022-08-21 00:04:46
+ * @LastEditTime: 2022-08-21 01:22:51
  * @LastEditors: cest
  * @FilePath: /color-ui-next/src/pages/index.vue
  * @Description: 编辑描述内容
@@ -14,6 +14,10 @@ const router = useRouter()
 const goItems = $ref([{
   name: 'Preflight',
   url: '/base/preflight',
+},
+{
+  name: '容器',
+  url: '/layout/container',
 }])
 const go = (url: string) => {
   router.push(url)
