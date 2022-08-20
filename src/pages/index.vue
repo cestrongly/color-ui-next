@@ -1,7 +1,7 @@
 <!--
  * @Author: cest
  * @Date: 2022-08-18 13:57:11
- * @LastEditTime: 2022-08-18 15:33:47
+ * @LastEditTime: 2022-08-21 00:04:46
  * @LastEditors: cest
  * @FilePath: /color-ui-next/src/pages/index.vue
  * @Description: 编辑描述内容
@@ -11,6 +11,10 @@ const user = useUserStore()
 const name = $ref(user.savedName)
 
 const router = useRouter()
+const goItems = $ref([{
+  name: 'Preflight',
+  url: '/base/preflight',
+}])
 const go = (url: string) => {
   router.push(url)
 }
@@ -60,12 +64,12 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
-    <div>
+    <div v-for="(item, index) in goItems" :key="index">
       <button
         btn m-3 text-sm
-        @click="go('/color-ui')"
+        @click="go(`/color-ui${item.url}`)"
       >
-        {{ t('button.color_ui_index') }}
+        {{ item.name }}
       </button>
     </div>
   </div>

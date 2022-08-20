@@ -1,0 +1,17 @@
+.padding-0
+  padding 0
+
+.padding-xs
+  padding .25rem
+
+.padding-sm
+  padding .5rem
+
+.padding
+  padding 1rem
+
+.padding-lg
+  padding 1.5rem
+
+.padding-xl
+  padding 2rem

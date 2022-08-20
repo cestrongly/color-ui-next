@@ -13,7 +13,8 @@
     "vitejs",
     "Vitesse",
     "vitest",
-    "vueuse"
+    "vueuse",
+    "styl",
   ],
   "i18n-ally.sourceLanguage": "en",
   "i18n-ally.keystyle": "nested",
