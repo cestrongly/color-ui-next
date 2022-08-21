@@ -13,6 +13,7 @@ import Inspect from 'vite-plugin-inspect'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
+import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 
 export default defineConfig({
   resolve: {
@@ -22,6 +23,7 @@ export default defineConfig({
   },
 
   plugins: [
+    VueSetupExtend(),
     Vue({
       include: [/\.vue$/, /\.md$/],
       reactivityTransform: true,

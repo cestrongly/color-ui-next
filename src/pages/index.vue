@@ -1,7 +1,7 @@
 <!--
  * @Author: cest
  * @Date: 2022-08-18 13:57:11
- * @LastEditTime: 2022-08-21 01:22:51
+ * @LastEditTime: 2022-08-21 07:51:45
  * @LastEditors: cest
  * @FilePath: /color-ui-next/src/pages/index.vue
  * @Description: 编辑描述内容
@@ -18,7 +18,12 @@ const goItems = $ref([{
 {
   name: '容器',
   url: '/layout/container',
-}])
+},
+{
+  name: 'Box Sizing',
+  url: '/layout/box-sizing',
+},
+])
 const go = (url: string) => {
   router.push(url)
 }

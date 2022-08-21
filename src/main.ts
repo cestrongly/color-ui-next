@@ -1,7 +1,7 @@
 /*
  * @Author: cest
  * @Date: 2022-08-20 19:22:16
- * @LastEditTime: 2022-08-21 07:09:11
+ * @LastEditTime: 2022-08-21 07:53:20
  * @LastEditors: cest
  * @FilePath: /color-ui-next/src/main.ts
  * @Description: 编辑描述内容
@@ -14,7 +14,7 @@ import generatedRoutes from '~pages'
 
 // import '@unocss/reset/tailwind.css'
 // import './styles/main.css'
-// import 'uno.css'
+import 'uno.css'
 
 const routes = setupLayouts(generatedRoutes)
 
